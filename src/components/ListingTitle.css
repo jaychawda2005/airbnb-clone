@@ -1,0 +1,35 @@
+.listing-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.listing-title h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.listing-title__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.listing-title__action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: underline;
+}
+
+.listing-title__action:hover {
+  background: #f7f7f7;
+}

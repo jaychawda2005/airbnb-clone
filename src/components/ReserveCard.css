@@ -1,0 +1,161 @@
+.reserve-card {
+  position: sticky;
+  top: 104px;
+  width: 380px;
+  flex-shrink: 0;
+}
+
+.reserve-card__promo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.reserve-card__promo-text u {
+  cursor: pointer;
+}
+
+.reserve-card__claim {
+  margin-left: auto;
+  border: 1px solid var(--color-text);
+  background: white;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.reserve-card__claim:hover {
+  background: #f7f7f7;
+}
+
+.reserve-card__box {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-elevated);
+  padding: 24px;
+}
+
+.reserve-card__price-row {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.reserve-card__price {
+  font-weight: 600;
+}
+
+.reserve-card__fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.reserve-card__field {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-border);
+  cursor: default;
+}
+
+.reserve-card__field:nth-child(1) {
+  border-right: 1px solid var(--color-border);
+}
+
+.reserve-card__field--full {
+  grid-column: span 2;
+  border-bottom: none;
+}
+
+.reserve-card__field label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+
+.reserve-card__field div {
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.reserve-card__guests-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reserve-card__cancellation {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  text-decoration: underline;
+  text-align: center;
+  margin: 16px 0;
+}
+
+.reserve-card__reserve-wrap {
+  position: relative;
+}
+
+.reserve-card__reserve-btn {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, var(--gradient-brand-start), var(--gradient-brand-end));
+}
+
+.reserve-card__reserve-btn:hover {
+  filter: brightness(1.05);
+}
+
+.reserve-card__toast {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  white-space: nowrap;
+  animation: toast-in 0.18s var(--ease-standard);
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 4px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.reserve-card__caption {
+  text-align: center;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin: 12px 0 0;
+}
+
+.reserve-card__report {
+  display: block;
+  text-align: center;
+  margin-top: 24px;
+  font-size: 13px;
+  text-decoration: underline;
+  color: var(--color-text);
+}

@@ -1,0 +1,58 @@
+.description {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.description__translation {
+  font-size: 14px;
+  color: var(--color-text);
+  margin: 0 0 20px;
+}
+
+.description__translation button {
+  background: none;
+  border: none;
+  font: inherit;
+  text-decoration: underline;
+  font-weight: 600;
+  padding: 0;
+}
+
+.description__text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 16px;
+  max-width: 640px;
+  white-space: pre-line;
+}
+
+/* CONFIRMED animation detail: the collapsed description fades to white on
+   its last visible line rather than a hard cutoff. */
+.description__text--clamped {
+  position: relative;
+  max-height: 4.5em;
+  overflow: hidden;
+}
+
+.description__text--clamped::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.5em;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.description__toggle {
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: underline;
+  padding: 0;
+  margin-top: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}

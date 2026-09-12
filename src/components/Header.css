@@ -1,0 +1,120 @@
+.site-header {
+  height: var(--header-height);
+  border-bottom: 1px solid var(--color-border-light);
+  position: relative;
+  z-index: 30;
+  background: var(--color-bg);
+}
+
+.site-header__inner {
+  max-width: 1760px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ff385c;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+
+.site-header__search {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 40px;
+  box-shadow: var(--shadow-card);
+  background: var(--color-bg);
+  padding: 6px 6px 6px 24px;
+  gap: 0;
+}
+
+.site-header__search:hover {
+  background: #f7f7f7;
+  box-shadow: var(--shadow-card);
+}
+
+.site-header__search-item {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 20px;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.site-header__search-item--muted {
+  color: var(--color-text-secondary);
+  font-weight: 400;
+}
+
+.site-header__divider {
+  width: 1px;
+  height: 24px;
+  background: var(--color-border);
+}
+
+.site-header__search-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ff385c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.site-header__search:hover .site-header__search-btn {
+  background: #d9044f;
+}
+
+.site-header__right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.site-header__host-link {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 22px;
+}
+
+.site-header__host-link:hover {
+  background: #f7f7f7;
+}
+
+.icon-btn {
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  border-radius: 21px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+}
+
+.icon-btn--menu {
+  width: auto;
+  padding: 0 8px 0 12px;
+  gap: 8px;
+}
+
+.icon-btn:hover {
+  box-shadow: var(--shadow-card);
+}

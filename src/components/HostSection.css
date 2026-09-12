@@ -1,0 +1,140 @@
+.host-section {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.host-section h2 {
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+
+.host-section__layout {
+  display: flex;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+.host-section__card {
+  width: 240px;
+  padding: 24px;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.host-section__avatar {
+  position: relative;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #0b3d2e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.host-section__badge {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 22px;
+  height: 22px;
+  background: #ff385c;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border: 2px solid white;
+}
+
+.host-section__card strong {
+  font-size: 20px;
+}
+
+.host-section__role {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.host-section__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  border-top: 1px solid var(--color-border-light);
+  padding-top: 16px;
+}
+
+.host-section__stats > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.host-section__cohosts h3 {
+  font-size: 16px;
+  margin: 0 0 16px;
+}
+
+.host-section__cohost-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 160px));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.host-section__cohost {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.host-section__cohost-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #e6e6e6;
+  color: #6a6a6a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.host-section__details-title {
+  margin-top: 8px;
+}
+
+.host-section__cohosts p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.host-section__message-btn {
+  margin-top: 16px;
+  padding: 13px 24px;
+  border: 1px solid var(--color-text);
+  border-radius: 8px;
+  background: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.host-section__message-btn:hover {
+  background: #f7f7f7;
+}

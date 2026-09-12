@@ -1,0 +1,37 @@
+.app {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 0 80px 80px;
+}
+
+.app__body {
+  margin-top: 8px;
+}
+
+.app__calendar-body {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.app__main {
+  flex: 1;
+  min-width: 0;
+}
+
+.app__below-calendar {
+  width: 100%;
+}
+
+.app__full-width-section {
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .app,
+  .site-header__inner,
+  .sticky-nav__inner {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
