@@ -1,4 +1,4 @@
-# Build status (partial delivery)
+# Build status
 
 This is the in-progress code for the Airbnb listing-page clone. Packaged on request
 before the full deliverable set was finished.
@@ -40,9 +40,10 @@ before the full deliverable set was finished.
   as explicitly NOT present via strikethrough text + a slashed icon - I'd
   originally omitted this distinction entirely.
 
-## Not done (explicitly out of scope per your instruction)
-- PROMPTS.md, production-scale architecture diagram, sub-agent/skill config
-  files, NOTES.md - you said you don't need these.
+## Architecture and agent configs
+- Production-scale Mermaid architecture diagram: `docs/architecture.md`.
+- Reusable visual/behavior QA agent: `.github/agents/marketplace-qa.agent.md`.
+- Production architecture review skill: `.github/skills/marketplace-architecture/SKILL.md`.
 
 ## Run it
 ```

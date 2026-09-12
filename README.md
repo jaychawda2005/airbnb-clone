@@ -1,6 +1,31 @@
-# React + TypeScript + Vite
+# Airbnb listing clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Production-scale architecture: [docs/architecture.md](docs/architecture.md)
+
+QA agent configuration: [.github/agents/marketplace-qa.agent.md](.github/agents/marketplace-qa.agent.md)
+
+Architecture skill configuration: [.github/skills/marketplace-architecture/SKILL.md](.github/skills/marketplace-architecture/SKILL.md)
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Project notes
+
+This is a static React/TypeScript reproduction of a vacation-rental listing page. Listing content is local and intentional static behavior is documented in `STATUS.md`.
+
+## Original Vite notes
+
+This project uses Vite with HMR and Oxlint rules.
 
 Currently, two official plugins are available:
 
